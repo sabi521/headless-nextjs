@@ -1,12 +1,11 @@
-import { Poppins } from "next/font/google";
+import { Roboto } from "@next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-const poppins = Poppins({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: "400", // if single weight, otherwise you use array like [400, 500, 700],
-  style: "normal", // if single style, otherwise you use array like ['normal', 'italic']
+  weight: ["100", "300", "400", "500", "700", "900"], // if single weight, otherwise you use array like [400, 500, 700],
 });
 
 export const metadata = {
@@ -17,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={roboto.className}>
         <Header />
         {children}
         <Footer />
