@@ -1,6 +1,7 @@
-import HeroImage from "./components/heroImage";
-import Services from "./components/services";
-import About from "./components/about";
+import HeroImage from "./components/HomeComponents/heroImage";
+import Services from "./components/HomeComponents/services";
+import About from "./components/HomeComponents/about";
+import Portfolio from "./components/HomeComponents/portfolio";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroImage />
       <Services />
       <About />
+      <Portfolio />
     </main>
   );
 }

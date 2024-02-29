@@ -8,11 +8,12 @@ export default function About() {
         <div className="grid md:grid-cols-2 grid-cols-1 gap-16 items-center">
           <div className="w-full">
             <Image
-              src="https://starwebfront.com/wp-content/uploads/2024/02/about-2.webp"
+              src="https://starwebfront.com/wp-content/uploads/2024/01/about-us-scaled.webp"
               width={542}
               height={442}
               alt="About us image"
-              className="w-full"
+              sizes="(min-width: 1320px) 572px, (min-width: 780px) 44.23vw, calc(100vw - 32px)"
+              className="w-full h-[500px] object-cover rounded-lg"
             />
           </div>
           <div className="">
