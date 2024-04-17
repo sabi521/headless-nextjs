@@ -2,6 +2,7 @@ import { Roboto } from "@next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Head from "next/head";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -16,6 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script src="/js/myscript.js"></script>
+      </head>
       <body className={roboto.className}>
         <Header />
         {children}
